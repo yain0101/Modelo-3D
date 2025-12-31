@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta charset="utf-8">
+
+<title>Práctica Tema 5 · Módulo 2 · Modelo 3D</title>
+
+<!-- X3DOM -->
+<script src="https://www.x3dom.org/download/x3dom.js"></script>
+<link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css"/>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+h1, h2 {
+    margin: 0.3em 0;
+}
+.contenedor {
+    max-width: 1100px;
+    margin: auto;
+}
+x3d {
+    width: 100%;
+    height: 700px;
+    border: 1px solid #aaa;
+    background: #ffffff;
+}
+.info {
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    color: #333;
+}
+</style>
+</head>
+
+<body>
+<div class="contenedor">
+
+<h1>Práctica — Tema 5 · Módulo 2</h1>
+<h2>Resultado del Modelado 3D</h2>
+
+<div class="info">
+Este visor presenta el modelo tridimensional generado como resultado de la <b>Práctica del Tema 5 del Módulo 2</b> del Diplomado, correspondiente al proceso de reconstrucción y visualización 3D desarrollado durante la actividad académica.
+</div>
+
+<x3d>
+  <scene>
+
+    <!-- Modelo final de la práctica -->
+    <inline url="https://raw.githubusercontent.com/yain0101/Modelo-3D/refs/heads/main/Resultado_Sainz_Said.x3d"></inline>
+
+    <!-- Cámara y luz de soporte -->
+    <viewpoint position="0 0 6" description="Vista inicial"></viewpoint>
+    <directionallight direction="-1 -1 -1" intensity="0.8"></directionallight>
+
+  </scene>
+</x3d>
+
+<div class="info">
+<b>Controles:</b>  
+Arrastrar para rotar · Rueda del mouse para zoom · Clic derecho para desplazar.
+</div>
+
+</div>
+</body>
+</html>
